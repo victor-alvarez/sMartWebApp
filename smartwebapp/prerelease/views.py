@@ -6,5 +6,6 @@ from django.shortcuts import render
 def home(request):
     return render(request, "prerelease/home.html")
 
-def about_us(request):
-    return render(request, "prerelease/about_us.html")
+
+def about(request):
+    return render(request, "prerelease/about.html")
