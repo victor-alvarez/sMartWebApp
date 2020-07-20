@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9b8634e-ed46-4888-a519-58a89ba94eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/v7.languages.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="a9b8634e-ed46-4888-a519-58a89ba94eae" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,7 +449,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49851632" visible="true" weight="0.11103767" />
