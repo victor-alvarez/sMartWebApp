@@ -198,29 +198,7 @@ url("https://static.wixstatic.com/ufonts/383abf_5e0767879da84c0ab64bacd0abaeb921
 .lb1itemsContainer > li:last-child {margin:0 !important;}
 .lb1 a {display:block;height:100%;}
 .lb1imageItemlink {cursor:pointer;}
-.lb1imageItemimageimage {position:static;box-shadow:#000 0 0 0;user-select:none;}.style-kcxwi94l {word-wrap:break-word;text-align:start;}
-.style-kcxwi94l_override-left * {text-align:left !important;}
-.style-kcxwi94l_override-right * {text-align:right !important;}
-.style-kcxwi94l_override-center * {text-align:center !important;}
-.style-kcxwi94l_override-justify * {text-align:justify !important;}
-.style-kcxwi94l > * {pointer-events:auto;}
-.style-kcxwi94l li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.style-kcxwi94l ol,.style-kcxwi94l ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l ul {list-style-type:disc;}
-.style-kcxwi94l ol {list-style-type:decimal;}
-.style-kcxwi94l ul ul,.style-kcxwi94l ol ul {list-style-type:circle;}
-.style-kcxwi94l ul ul ul,.style-kcxwi94l ol ul ul {list-style-type:square;}
-.style-kcxwi94l ul ol ul,.style-kcxwi94l ol ol ul {list-style-type:square;}
-.style-kcxwi94l ul[dir="rtl"],.style-kcxwi94l ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.style-kcxwi94l ul[dir="rtl"] ul,.style-kcxwi94l ul[dir="rtl"] ol,.style-kcxwi94l ol[dir="rtl"] ul,.style-kcxwi94l ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.style-kcxwi94l p {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.style-kcxwi94l a {color:inherit;}
+.lb1imageItemimageimage {position:static;box-shadow:#000 0 0 0;user-select:none;}
 
 #SITE_HEADERinlineContent {
     height: auto;
@@ -290,7 +268,7 @@ url("https://static.wixstatic.com/ufonts/383abf_5e0767879da84c0ab64bacd0abaeb921
 
 #comp-ioi9hvf5 {
     position: relative;
-    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+    margin: 0px 0px 1px calc((100% - 980px) * 0.5);
     left: 26px;
     grid-area: 3 / 1 / 4 / 2;
     justify-self: start;
@@ -506,7 +484,7 @@ url("https://static.wixstatic.com/ufonts/383abf_5e0767879da84c0ab64bacd0abaeb921
 
 #comp-kcuov7o2 {
     position: relative;
-    margin: 31px 0px 21px 0;
+    margin: 31px 0px 23px 0;
     left: 343px;
     grid-area: 1 / 1 / 4 / 2;
     justify-self: start;
@@ -533,7 +511,7 @@ url("https://static.wixstatic.com/ufonts/383abf_5e0767879da84c0ab64bacd0abaeb921
 
 #comp-kcuov7o5 {
     position: relative;
-    margin: 0px 0px 0px 0;
+    margin: 0px 0px 2px 0;
     left: 665px;
     grid-area: 1 / 1 / 6 / 2;
     justify-self: start;
@@ -560,7 +538,7 @@ url("https://static.wixstatic.com/ufonts/383abf_5e0767879da84c0ab64bacd0abaeb921
 
 #comp-kcuov7nv {
     position: relative;
-    margin: 12px 0px 4px 0;
+    margin: 12px 0px 6px 0;
     left: 996px;
     grid-area: 1 / 1 / 5 / 2;
     justify-self: start;
@@ -804,7 +782,7 @@ url("https://static.wixstatic.com/ufonts/383abf_5e0767879da84c0ab64bacd0abaeb921
 
 #comp-kcutdyeq {
     position: relative;
-    margin: 34px 0px -35px calc((100% - 980px) * 0.5);
+    margin: 34px 0px -34px calc((100% - 980px) * 0.5);
     left: 328px;
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;

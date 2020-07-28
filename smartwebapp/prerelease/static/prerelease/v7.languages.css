@@ -1,4 +1,5 @@
-/*
+<style id="v7.languages.css">
+                    /*
 This CSS resource incorporates links to font software which is the valuable copyrighted
 property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
 redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
@@ -1616,3 +1617,5 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
     src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Japanese/Cookhand/v1/WIX-CookHandStd-R.woff2") format("woff2"),
     url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Japanese/Cookhand/v1/WIX-CookHandStd-R.woff") format("woff")
 }
+
+                </style>
