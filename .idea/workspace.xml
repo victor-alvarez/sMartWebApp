@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9b8634e-ed46-4888-a519-58a89ba94eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/backend/usermanagement/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/v7.languages.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/viewer_main_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/prerelease/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/seperate-css-algorithm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/smartserver/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/smartserver/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/smartserver/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/smartserver/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartwebapp/smartserver/wsgi.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="316">
+              <caret line="152" column="6" selection-start-line="152" selection-start-column="6" selection-end-line="152" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -76,8 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>back</find>
-      <find>webpa</find>
       <find>._1</find>
       <find>comp-kcuk</find>
       <find>comp-kcukbengimgimage</find>
@@ -106,6 +74,8 @@
       <find>contain</find>
       <find>&lt;style</find>
       <find>styles</find>
+      <find>man</find>
+      <find>.idea</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,8 +111,8 @@
         <option value="$PROJECT_DIR$/smartwebapp/prerelease/static/prerelease/main.css" />
         <option value="$PROJECT_DIR$/smartwebapp/seperate-css-algorithm.py" />
         <option value="$PROJECT_DIR$/smartwebapp/prerelease/templates/prerelease/home.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/smartserver/settings.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -164,11 +134,6 @@
             <path>
               <item name="sMartWebApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="sMartWebApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sMartWebApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sMartWebApp" type="462c0819:PsiDirectoryNode" />
-              <item name="smartserver" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,6 +215,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49851632" visible="true" weight="0.11037674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -363,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="316">
+          <caret line="152" column="6" selection-start-line="152" selection-start-column="6" selection-end-line="152" selection-end-column="6" />
         </state>
       </provider>
     </entry>
