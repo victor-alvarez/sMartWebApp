@@ -2,7 +2,7 @@ app = input("Enter the app name: ")
 filename = input("Enter the HTML file name: ")
 
 f1 = open(app + "/templates/" + app + "/" + filename, "r", encoding="utf8")
-f2 = open(app + "/static/" + app + "/" + "main.css", "w", encoding="utf8")
+f2 = open(app + "/static/" + app + "/" + "main-" + filename[:-5] + ".css", "w", encoding="utf8")
 s = f1.read()
 
 while "<style" in s:
