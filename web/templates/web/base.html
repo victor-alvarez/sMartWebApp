@@ -1,13 +1,13 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-        <link href="{% static 'web/main.css' %}" rel="stylesheet" />
-        <title>Document</title>
+        <link href="{% static 'web/'|add:root|add:'/css/main.css' %}" rel="stylesheet" />
+        <title>sMart | {{ title }}</title>
+        {% block head-content %}{% endblock %}
     </head>
     <body>
-        {% block content %}{% endblock %}
+        {% block body-content %}{% endblock %}
     </body>
 </html>

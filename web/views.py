@@ -4,4 +4,14 @@ from django.shortcuts import render
 
 
 def homepage(request):
-    return render(request, "web/homepage.html")
+    return render(request, "web/homepage.html", {
+        'title': 'Homepage',
+        'root': 'homepage'
+    })
+
+
+def marketplace(request):
+    return render(request, "web/marketplace.html", {
+        'title': 'Marketplace',
+        'root': 'marketplace'
+    })
