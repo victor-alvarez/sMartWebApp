@@ -20,5 +20,5 @@ from backend_usermanagement.views import register
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("web.urls")),
-    path('register/', register),
+    path('register/', register, name="register"),
 ]
