@@ -1,37 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta charset="utf-8">
-        <meta name="generator" content="Wix.com Website Builder">
-        <link rel="shortcut icon" href="https://static.wixstatic.com/media/383abf_b7d27946a57b41bc892d6a192c78b45e%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/383abf_b7d27946a57b41bc892d6a192c78b45e%7Emv2.jpg" type="image/jpeg">
-        <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/383abf_b7d27946a57b41bc892d6a192c78b45e%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/383abf_b7d27946a57b41bc892d6a192c78b45e%7Emv2.jpg" type="image/jpeg">
-        <meta http-equiv="X-Wix-Meta-Site-Id" content="095d49d3-e1cb-4092-bbe1-64836f402125">
-        <meta http-equiv="X-Wix-Application-Instance-Id" content="35d8f3d2-8831-4bda-bde4-5f98ea06fb4a">
-        <meta http-equiv="X-Wix-Published-Version" content="73">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-        <meta id="wixMobileViewport" name="viewport" content="width=980, user-scalable=yes">
-
-        <link rel="stylesheet" href="{% static 'web/viewer-main-style.css' %}">
-        <link rel="stylesheet" href="{% static 'web/v7-languages.css' %}">
-
-        {% if title %}
-            <link rel="stylesheet" href="{{ title.0 }}">
-            <title>{{ title.1 }} | Smart</title>
-        {% else %}
-            <link rel="stylesheet" href="{% static 'web/main.css' %}">
-            <title>Accelerate Your Career | SMart - Student Marketplace</title>
-        {% endif %}
-        <link rel="canonical" href="https://www.smartonline.ca">
-        <meta property="og:title" content="Accelerate Your Career | SMart - Student Marketplace">
-        <meta property="og:url" content="https://www.smartonline.ca">
-        <meta property="og:site_name" content="Smart">
-        <meta property="og:type" content="website">
-        <meta name="google-site-verification" content="fACokpNO0y2vrKrnCeDOYvDjoed9t9fh4TMiryu4SD8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="{% static 'web/main.css' %}" rel="stylesheet" />
+        <title>Document</title>
     </head>
-    <body class="" data-js-loaded="true" style="">
+    <body>
         {% block content %}{% endblock %}
     </body>
 </html>

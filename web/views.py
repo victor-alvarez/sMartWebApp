@@ -3,9 +3,5 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def home(request):
-    return render(request, "web/home.html")
-
-
-def events(request):
-    return render(request, "web/events.html", {'title': ["/static/web/main-events.css", 'Events']})
+def homepage(request):
+    return render(request, "web/homepage.html")
