@@ -7,12 +7,12 @@ from .models import MyUser
 class MyUserAdmin(UserAdmin):
     add_form = UserCreationForm
 
-    list_display = ('email', 'username', 'is_admin', 'is_staff')
+    list_display = ('email', 'username', 'is_admin', 'is_staff', 'is_active')
     list_filter = ('is_admin',)
 
     fieldsets = (
         (None, {'fields':('username', 'email', 'password')}),
-        ('Permissions', {'fields': ('is_admin', 'is_staff')})
+        ('Permissions', {'fields': ('is_admin', 'is_staff', 'is_active')})
     )
 
     search_fields = ('username', 'email')

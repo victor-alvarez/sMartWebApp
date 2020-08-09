@@ -47,13 +47,14 @@ class MyUser(AbstractBaseUser):
 
     is_admin = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
-    user_obj = MyUserManager()
+    is_active = models.BooleanField(default=True)
+    objects = MyUserManager()
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email']
 
     def __str__(self):
-        return self.email
+        return self.username
 
     def get_short_name(self):
         return self.email
