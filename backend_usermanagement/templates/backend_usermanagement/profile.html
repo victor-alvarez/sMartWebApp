@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Hello there {{ user }} !</h1>
 
+
+
+<h1>Hello there {{ user }} !</h1>
+<a href="{% url 'logout' %}">Logout</a>
 
 {% endblock %}
 
