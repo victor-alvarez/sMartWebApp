@@ -15,3 +15,10 @@ def marketplace(request):
         'title': 'Marketplace',
         'root': 'marketplace'
     })
+
+
+def mentor_profile(request):
+    return render(request, "web/mentor_profile.html", {
+        'title': 'Mentor Profile',
+        'root': 'mentor_profile'
+    })
