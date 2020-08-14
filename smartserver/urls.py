@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from backend_usermanagement.views import register, login_view, logout_view, profile_dashboard
+# from backend_usermanagement.views import register, login_view, logout_view
+from web.views import profile_dashboard, register, login_view, logout_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
