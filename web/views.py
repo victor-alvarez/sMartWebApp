@@ -55,6 +55,6 @@ def logout_view(request):
 def profile_dashboard(request):
     if (request.user.is_authenticated):
         content = {'user' : request.user}
-        return render(request, 'backend_usermanagement/profile.html', content)
+        return render(request, 'web/student_dashboard.html', content)
     else:
         return HttpResponseRedirect('/')

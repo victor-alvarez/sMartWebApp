@@ -4,7 +4,9 @@ from django.urls import path
 urlpatterns = [
     path('', views.homepage, name="web-homepage"),
     path('marketplace/', views.marketplace, name="web-marketplace"),
-    path('mentor-profile/', views.mentor_profile, name="web-mentor-profile")
+    path('mentor-profile/', views.mentor_profile, name="web-mentor-profile"),
+    path('profile/', views.profile_dashboard, name="student-dashboard"),
+    path('logout/', views.logout_view, name="logout"),
 ]
 
 # <app>/<model>_<viewtype).html
