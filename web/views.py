@@ -9,7 +9,7 @@ from django.contrib.auth import login, logout
 def homepage(request):
     return render(request, "web/homepage.html", {
         'title': 'Homepage',
-        'root': 'homepage'
+        'name': 'homepage'
     })
 
 
@@ -27,7 +27,6 @@ def mentor_profile(request):
     })
 
 
-
 def register(request):
     form = UserCreationForm(request.POST or None)
 
@@ -39,6 +38,7 @@ def register(request):
     }
     return render(request, "backend_usermanagement/register.html", context)
 
+
 def login_view(request):
     form = UserLoginForm(request.POST or None)
     if form.is_valid():
@@ -48,9 +48,11 @@ def login_view(request):
         return HttpResponseRedirect('/profile/')
     return render(request, "backend_usermanagement/login.html", {"form" : form})
 
+
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect('/')
+
 
 def profile_dashboard(request):
     if (request.user.is_authenticated):
