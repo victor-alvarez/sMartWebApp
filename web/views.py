@@ -16,7 +16,7 @@ def homepage(request):
 def marketplace(request):
     return render(request, "web/marketplace.html", {
         'title': 'Marketplace',
-        'root': 'marketplace'
+        'name': 'marketplace'
     })
 
 
