@@ -470,6 +470,8 @@ body {
 			background-repeat: no-repeat;
 			width: 208px;
 			height: 187px;
+			background-size: cover;
+			background-position: center center;
 		}
 
 	/* Frame 19 */
@@ -678,7 +680,8 @@ body {
 			left: 46px;
 			width: 266px;
 			top: 167px;
-			height: 0px;
+			height: 1px;
+			transform: translate(-0.5px, 0.5px);
 		}
 
 		/* Line 5 */
@@ -686,7 +689,8 @@ body {
 			left: 46px;
 			width: 266px;
 			top: 392px;
-			height: 0px;
+			height: 1px;
+			transform: translate(-0.5px, 0.5px);
 		}
 
 		/* Line 6 */
