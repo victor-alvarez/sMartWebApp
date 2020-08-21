@@ -363,7 +363,9 @@ body {
     width: 460px;
     height: 258px;
     overflow: hidden;
-    background: rgb(0, 77, 115);
+    background: url("55b17f847b1145a0e2328cbb9fe301ca.png");
+    background-size: cover;
+    background-position: center center;
     left: 80px;
     top: 1225px;
 }
@@ -375,7 +377,9 @@ body {
     width: 460px;
     height: 258px;
     overflow: hidden;
-    background: rgb(0, 77, 115);
+    background: url("498182b931bebbe28c400b6218a65961.png");
+    background-size: cover;
+    background-position: center center;
     left: 80px;
     top: 1519px;
 }
