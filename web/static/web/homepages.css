@@ -556,10 +556,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    left: -39px;
-    width: 395px;
-    top: -46px;
-    height: 383px;
+    left: 20px;
+    width: 300px;
+    top: 35px;
+    height: 200px;
 }
 
 
@@ -776,8 +776,8 @@ body {
     background-position: center center;
     left: -15px;
     width: 166px;
-    top: -59px;
-    height: 194px;
+    top: 0;
+    height: 80px;
 }
 
 
