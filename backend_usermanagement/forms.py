@@ -60,3 +60,14 @@ class StudentRegistrationForm(UserCreationForm):
         if commit:
             user.save()
         return user
+
+class MentorRegistrationForm(UserCreationForm):
+
+    def save(self, commit=True):
+        user = super(UserCreationForm, self).save(commit=False)
+        user.set_password(self.cleaned_data['password1'])
+        user.is_teacher = True
+
+        if commit:
+            user.save()
+        return user
