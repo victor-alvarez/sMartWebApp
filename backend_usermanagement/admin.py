@@ -12,6 +12,7 @@ class MyUserAdmin(UserAdmin):
 
     fieldsets = (
         (None, {'fields':('username', 'email', 'password')}),
+        ('Type of User', {'fields' : ('is_student', 'is_teacher')}),
         ('Permissions', {'fields': ('is_admin', 'is_staff', 'is_active')})
     )
 
