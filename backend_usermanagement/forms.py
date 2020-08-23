@@ -49,3 +49,14 @@ class UserLoginForm(forms.Form):
             raise forms.ValidationError('Invalid credentials')
         self.cleaned_data["user_obj"] = user_obj
         return super(UserLoginForm, self).clean(*args, **kwargs)
+
+class StudentRegistrationForm(UserCreationForm):
+
+    def save(self, commit=True):
+        user = super(UserCreationForm, self).save(commit=False)
+        user.set_password(self.cleaned_data['password1'])
+        user.is_student = True
+
+        if commit:
+            user.save()
+        return user

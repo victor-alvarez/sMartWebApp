@@ -1,6 +1,7 @@
+
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from backend_usermanagement.forms import UserCreationForm, UserLoginForm
+from backend_usermanagement.forms import UserCreationForm, UserLoginForm, StudentRegistrationForm
 from django.contrib.auth import login, logout
 
 # Create your views here.
@@ -38,6 +39,16 @@ def register(request):
     }
     return render(request, "backend_usermanagement/register.html", context)
 
+def register_student(request):
+    form = StudentRegistrationForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect('/login/')
+    context = {
+        'form' : form
+    }
+    return render(request, "backend_usermanagement/register.html", context)
+
 
 def login_view(request):
     form = UserLoginForm(request.POST or None)
@@ -45,7 +56,7 @@ def login_view(request):
         user_obj = form.cleaned_data.get('user_obj')
         login(request, user_obj)
 
-        return HttpResponseRedirect('/profile/')
+        return HttpResponseRedirect('/profile-student/')
     return render(request, "backend_usermanagement/login.html", {"form" : form})
 
 
@@ -54,9 +65,10 @@ def logout_view(request):
     return HttpResponseRedirect('/')
 
 
-def profile_dashboard(request):
-    if (request.user.is_authenticated):
+def profile_student_dashboard(request):
+    if (request.user.is_authenticated and request.user.is_student):
         content = {'user' : request.user}
         return render(request, 'web/student_dashboard.html', content)
     else:
-        return HttpResponseRedirect('/')
+
+        return HttpResponseRedirect('/login/')

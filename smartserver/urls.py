@@ -16,12 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 # from backend_usermanagement.views import register, login_view, logout_view
-from web.views import profile_dashboard, register, login_view, logout_view
+from web.views import profile_student_dashboard, register, login_view, logout_view, register_student
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("web.urls")),
     path('register/', register, name="register"),
+    path('register-student/', register_student, name="register-student"),
     path('login/', login_view, name="login"),
     path('logout/', logout_view, name="logout"),
     # path('profile/', profile_dashboard, name="profile"),
