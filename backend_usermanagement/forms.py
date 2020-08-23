@@ -1,6 +1,8 @@
 from django import forms
 from django.contrib.auth import get_user_model
 from django.db.models import Q
+from backend_usermanagement.models import Student, Mentor
+from django.db import transaction
 
 User = get_user_model()
 
@@ -52,6 +54,8 @@ class UserLoginForm(forms.Form):
 
 class StudentRegistrationForm(UserCreationForm):
 
+
+    @transaction.atomic
     def save(self, commit=True):
         user = super(UserCreationForm, self).save(commit=False)
         user.set_password(self.cleaned_data['password1'])
@@ -59,6 +63,12 @@ class StudentRegistrationForm(UserCreationForm):
 
         if commit:
             user.save()
+
+        student = Student.objects.create(user=user)
+        student.username = user.username
+        student.email = user.email
+        student.save()
+
         return user
 
 class MentorRegistrationForm(UserCreationForm):
@@ -68,6 +78,13 @@ class MentorRegistrationForm(UserCreationForm):
         user.set_password(self.cleaned_data['password1'])
         user.is_teacher = True
 
+
         if commit:
             user.save()
+
+        mentor = Mentor.objects.create(user=user)
+        mentor.username = user.username
+        mentor.email = user.email
+        mentor.save()
+
         return user

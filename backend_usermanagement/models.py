@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import RegexValidator
+
 # Create your models here.
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
@@ -66,3 +67,53 @@ class MyUser(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
+
+class Student(models.Model):
+    user = models.OneToOneField(MyUser, on_delete=models.CASCADE)
+    username = models.CharField(
+        max_length=255,
+        unique=False,
+        validators=[
+            RegexValidator(regex=USERNAME_REGEX,
+                           message='Username must be alphanumeric',
+                           code='invalid username')
+        ],
+        default='username'
+    )
+
+    email = models.EmailField(
+        max_length=255,
+        unique=False    ,
+        verbose_name='email address',
+        default='email@email.com'
+
+    )
+
+    def __str__(self):
+        return self.username
+
+class Mentor(models.Model):
+    user = models.OneToOneField(MyUser, on_delete=models.CASCADE)
+    username = models.CharField(
+        max_length=255,
+        unique=False,
+        validators=[
+            RegexValidator(regex=USERNAME_REGEX,
+                           message='Username must be alphanumeric',
+                           code='invalid username')
+        ],
+        default='username'
+    )
+
+    email = models.EmailField(
+        max_length=255,
+        unique=False,
+        verbose_name='email address',
+        default='email@email.com'
+
+    )
+
+    def __str__(self):
+        return self.username
+
+

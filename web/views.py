@@ -1,7 +1,7 @@
 
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from backend_usermanagement.forms import UserCreationForm, UserLoginForm, StudentRegistrationForm
+from backend_usermanagement.forms import UserCreationForm, UserLoginForm, StudentRegistrationForm, MentorRegistrationForm
 from django.contrib.auth import login, logout
 
 # Create your views here.
@@ -46,6 +46,16 @@ def register_student(request):
         return HttpResponseRedirect('/login/')
     context = {
         'form' : form
+    }
+    return render(request, "backend_usermanagement/register.html", context)
+
+def register_mentor(request):
+    form = MentorRegistrationForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect('/login/')
+    context = {
+        'form': form
     }
     return render(request, "backend_usermanagement/register.html", context)
 
