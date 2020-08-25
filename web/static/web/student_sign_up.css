@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+	padding: 0;
+}
+
+/* Student Sign Up (1) */
+#n151_138 {
+	width: 100%;
+	height: 900px;
+	overflow: hidden;
+	background: rgb(0, 153, 255);
+}
+
+	/* Password */
+	#n151_159 {
+		width: 540px;
+		height: 60px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		left: 837px;
+		top: 474px;
+	}
+
+		/* Password */
+		#n151_148 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(168, 168, 168);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			width: 106px;
+			align-items: center;
+			line-height: 28.125px;
+			height: 28px;
+			left: 15px;
+			top: 16px;
+		}
+
+	/* Create Your Profile */
+	#n151_139 {
+		font-family: Roboto;
+		font-size: 48px;
+		font-weight: 400;
+		letter-spacing: 0px;
+		color: rgb(255, 255, 255);
+		vertical-align: middle;
+		text-align: center;
+		justify-content: center;
+		width: 399px;
+		align-items: center;
+		line-height: 56.25px;
+		height: 56px;
+		left: 836px;
+		top: 194px;
+	}
+
+	/* Rectangle 47 */
+	#n151_141 {
+		background: rgba(255, 255, 255, 0.25);
+		left: 1156px;
+		width: 221px;
+		top: 378px;
+		height: 60px;
+	}
+
+	/* @mail.utoronto.ca */
+	#n151_151 {
+		font-family: Roboto;
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 0px;
+		color: rgb(255, 255, 255);
+		vertical-align: middle;
+		text-align: center;
+		justify-content: center;
+		width: 202px;
+		align-items: center;
+		line-height: 28.125px;
+		height: 28px;
+		left: 1164px;
+		top: 392px;
+	}
+
+	/* Username */
+	#n151_157 {
+		width: 540px;
+		height: 60px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		left: 837px;
+		top: 282px;
+	}
+
+		/* Username */
+		#n151_147 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(168, 168, 168);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			width: 109px;
+			align-items: center;
+			line-height: 28.125px;
+			height: 28px;
+			left: 18px;
+			top: 16px;
+		}
+
+	/* Frame 39 */
+	#n151_158 {
+		width: 319px;
+		height: 60px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		left: 837px;
+		top: 378px;
+	}
+
+		/* Email */
+		#n151_146 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(168, 168, 168);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			width: 60px;
+			align-items: center;
+			line-height: 28.125px;
+			height: 28px;
+			left: 13px;
+			top: 16px;
+		}
+
+	/* Program */
+	#n151_161 {
+		width: 319px;
+		height: 60px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		left: 837px;
+		top: 563px;
+	}
+
+		/* Program */
+		#n151_149 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(168, 168, 168);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			width: 92px;
+			align-items: center;
+			line-height: 28.125px;
+			height: 28px;
+			left: 20px;
+			top: 16px;
+		}
+
+	/* Frame 40 */
+	#n151_162 {
+		width: 127px;
+		height: 60px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		left: 1250px;
+		top: 561px;
+	}
+
+		/* Year */
+		#n151_153 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(168, 168, 168);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			width: 48px;
+			align-items: center;
+			line-height: 28.125px;
+			height: 28px;
+			left: 27px;
+			top: 16px;
+		}
+
+		/* Polygon 2 */
+		#n151_154 {
+			left: 93px;
+			width: 7.99995px;
+			top: 27px;
+			height: 6.98504px;
+		}
+
+	/* Frame 41 */
+	#n151_184 {
+		width: 212px;
+		height: 59px;
+		overflow: hidden;
+		background: rgb(0, 77, 115);
+		left: 1014px;
+		top: 743px;
+	}
+
+		/* Submit */
+		#n151_150 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(255, 255, 255);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			width: 80px;
+			align-items: center;
+			line-height: 28.125px;
+			height: 21px;
+			left: 66px;
+			top: 19px;
+		}
+
+	/* Rectangle 1 */
+	#n162_143 {
+		width: 1440px;
+		height: 82px;
+	}
+
+	/* Log In */
+	#n162_147 {
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0px;
+		color: rgb(255, 255, 255);
+		vertical-align: middle;
+		text-align: center;
+		justify-content: center;
+		width: 55px;
+		align-items: center;
+		line-height: 23.4375px;
+		height: 23px;
+		left: 1322px;
+		top: 28px;
+	}
+
+	/* Sign Up */
+	#n162_146 {
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0px;
+		color: rgb(255, 255, 255);
+		vertical-align: middle;
+		text-align: center;
+		justify-content: center;
+		width: 69px;
+		align-items: center;
+		line-height: 23.4375px;
+		height: 23px;
+		left: 1211px;
+		top: 28px;
+		position: absolute;
+	}
+
+	/* Find Mentors */
+	#n162_145 {
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0px;
+		color: rgb(255, 255, 255);
+		vertical-align: middle;
+		text-align: center;
+		justify-content: center;
+		width: 118px;
+		align-items: center;
+		line-height: 23.4375px;
+		height: 23px;
+		left: 1052px;
+		top: 28px;
+	}
+
+	/* SmartMentor2 (1) 2 */
+	#n162_144 {
+		background-image: url("https://s3-alpha-sig.figma.com/img/21a3/b3a6/aaa8c746f38344dc28d306ae85e2fddb?Expires=1598832000&Signature=O81GH~StMILp1MknmjeFKy5Im9639m6VDHjqV3VU9DEE6H5OJWBgykqqMCCpDzerLHErIecTTBojUvY4e6A-EQEHA8DVNc5bPDC4G0~hE2e24pc2MjRdfQF4trLucubuCeZ3fX9HS~3wujWb2yMdZGF6BzENNPuwpMF--DVMjI4d9QkqukfTgh0o8COUSpEtzf1lL0l6X-hG9cV2pg0GB5caDzhGMoSqZ8BGisuXP8njaPeT7KDjN3WQqR3Kt7E4kBe6BuwvHx2qhTvcWE~GtjPlo8kT2KpCG4OK90mDDrO-Dt9Eh4xpddh9T8GlfnFDK3E3yAI4dqyduxI1gpoYDw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		left: -15px;
+        width: 166px;
+        top: 0;
+        height: 80px;
+	}
+
+	/* Frame 66 */
+	#n216_147 {
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		left: 905px;
+		top: 672px;
+	}
+
+		/* icon/navigation/check_24px */
+		#n216_149 {
+			left: 10%;
+			right: 15%;
+			top: 25%;
+			bottom: 25%;
+		}
+
+	/* I agree to the Terms & Conditions */
+	#n216_148 {
+		align-items: center;
+		color: rgb(0, 0, 0);
+		vertical-align: middle;
+		text-align: center;
+		justify-content: center;
+		width: 355px;
+		line-height: 28.125px;
+		height: 28px;
+		left: 949px;
+		top: 668px;
+	}
+
+		/* I agree to the Terms & Conditions Subset */
+		#n216_148-1 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 28.125px;
+			letter-spacing: 0px;
+			align-items: normal;
+			color: rgb(196, 196, 196);
+		}
+
+		/* I agree to the Terms & Conditions Subset */
+		#n216_148-0 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 28.125px;
+			letter-spacing: 0px;
+			align-items: normal;
+		}
+
+		/* I agree to the Terms & Conditions Subset */
+		#n216_148-2 {
+			font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 28.125px;
+			letter-spacing: 0px;
+			align-items: normal;
+			color: rgb(255, 255, 255);
+		}
+
+	/* SmartMentor2 (1) 4 */
+	#n385_0 {
+		background-image: url("https://s3-alpha-sig.figma.com/img/21a3/b3a6/aaa8c746f38344dc28d306ae85e2fddb?Expires=1598832000&Signature=O81GH~StMILp1MknmjeFKy5Im9639m6VDHjqV3VU9DEE6H5OJWBgykqqMCCpDzerLHErIecTTBojUvY4e6A-EQEHA8DVNc5bPDC4G0~hE2e24pc2MjRdfQF4trLucubuCeZ3fX9HS~3wujWb2yMdZGF6BzENNPuwpMF--DVMjI4d9QkqukfTgh0o8COUSpEtzf1lL0l6X-hG9cV2pg0GB5caDzhGMoSqZ8BGisuXP8njaPeT7KDjN3WQqR3Kt7E4kBe6BuwvHx2qhTvcWE~GtjPlo8kT2KpCG4OK90mDDrO-Dt9Eh4xpddh9T8GlfnFDK3E3yAI4dqyduxI1gpoYDw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		left: -7px;
+		width: 819px;
+		top: 145px;
+		height: 586px;
+	}
