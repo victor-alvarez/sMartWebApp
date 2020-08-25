@@ -5,6 +5,9 @@
     <link rel="stylesheet" type="text/css" href="https://ui-kit.co/figma2html/dist/layout.css?v=2">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 {% endblock %}
 {% block body-content %}
     <!-- Homepage -->
@@ -27,7 +30,16 @@
         <!-- Log In -->
         <div class="left top text" id="n144_33">Log In</div>
         <!-- Sign Up -->
-        <div class="left top text" id="n144_34">Sign Up</div>
+        <div class="left top text dropdown" id="n144_34">
+            <a class="dropdown-toggle" href="" data-toggle="dropdown" style="width: 94px; color: rgb(255, 255, 255); text-decoration: none;">
+                Sign Up<span class="caret" style="left: 76px;top: 12px;"></span>
+            </a>
+            <ul class="dropdown-menu" style="height: 79px;left: -13.5px;top: 120%;background: rgb(0, 153, 255);min-width: 90px;">
+                <li><a href="#" style="width: 88px; color: rgb(255, 255, 255)">Student</a></li>
+                <li class="divider" style="width: 100%;top: 30px;height: 0.5px;"></li>
+                <li style="top: 45px;"><a href="#" style="width: 88px; color: rgb(255, 255, 255)">Mentor</a></li>
+            </ul>
+        </div>
         <!-- Rectangle 2 -->
         <div class="left top rectangle" id="n144_35"></div>
         <!-- Mentors -->

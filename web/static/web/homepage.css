@@ -161,6 +161,11 @@ body {
     height: 23px;
     left: 1211px;
     top: 28px;
+    position: absolute;
+}
+
+#n144_34 li a:hover {
+    background: rgb(0, 133, 255);
 }
 
 
