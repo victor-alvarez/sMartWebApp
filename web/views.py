@@ -47,12 +47,20 @@ def register(request):
     return render(request, "backend_usermanagement/register.html", context)
 
 def register_student(request):
-    form = StudentRegistrationForm(request.POST or None)
-    if form.is_valid():
-        form.save()
+    user_form = UserCreationForm(request.POST or None)
+    student_form = StudentRegistrationForm(request.POST or None)
+    if user_form.is_valid() and student_form.is_valid():
+        user = user_form.save(commit=False)
+        user.is_student = True
+        user.save()
+        student = student_form.save(commit=False)
+        student.user = user
+        student.username = user.username
+        student.email = user.email
+        student.save()
         return HttpResponseRedirect('/login/')
     context = {
-        'form' : form
+        'form' : user_form, 'form_student' : student_form
     }
     return render(request, "backend_usermanagement/register.html", context)
 

@@ -89,6 +89,17 @@ class Student(models.Model):
 
     )
 
+    program = models.CharField(max_length=255, unique=False, verbose_name='program', default="program")
+
+    year = models.CharField(max_length=255,choices= [
+        ("Freshman", 'Freshman'),
+        ("Sophomore", 'Sophomore'),
+        ('Junior', 'Junior'),
+        ("Senior", 'Senior'),
+        ("Graduate", 'Graduate'),
+    ], default="year"
+    )
+
     def __str__(self):
         return self.username
 

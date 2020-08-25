@@ -52,24 +52,34 @@ class UserLoginForm(forms.Form):
         self.cleaned_data["user_obj"] = user_obj
         return super(UserLoginForm, self).clean(*args, **kwargs)
 
-class StudentRegistrationForm(UserCreationForm):
+class StudentRegistrationForm(forms.ModelForm):
 
+    class Meta:
+        model = Student
+        fields = ['program', 'year']
 
-    @transaction.atomic
-    def save(self, commit=True):
-        user = super(UserCreationForm, self).save(commit=False)
-        user.set_password(self.cleaned_data['password1'])
-        user.is_student = True
+    # @transaction.atomic
+    # def save(self, commit=True):
+    #     user = super().save(commit=False)
+    #     user.is_student = True
+    #     user.save()
+    #     student = Student.objects.create(user=user)
+    #     student.program = self.cleaned_data.get('program')
+    #     return user
+        # user = super(StudentRegistrationForm, self).save(commit=False)
+        # user.set_password(self.cleaned_data['password1'])
+        # user.is_student = True
+        #
+        # if commit:
+        #     user.save()
+        #
+        # student = Student.objects.create(user=user)
+        # student.username = user.username
+        # student.email = user.email
+        #
+        # student.save()
 
-        if commit:
-            user.save()
-
-        student = Student.objects.create(user=user)
-        student.username = user.username
-        student.email = user.email
-        student.save()
-
-        return user
+        # return user
 
 class MentorRegistrationForm(UserCreationForm):
 
