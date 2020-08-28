@@ -5,6 +5,7 @@ body {
 /* Main Marketplace */
 #n170_154 {
 	width: 100%;
+	min-width: 1440px;
 	height: 900px;
 	overflow: hidden;
 	background: rgb(238, 238, 238);

@@ -8,6 +8,7 @@ body {
 
 #n144_22 {
     width: 100%;
+    min-width: 1440px;
     height: 3142px;
     overflow: hidden;
     background: rgb(255, 255, 255);
