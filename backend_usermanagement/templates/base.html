@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<img lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+h1 {
+  color: white;
+  font-family: verdana;
+  font-size: 300%;
+   text-indent: 50px;
+
+}
+p {
+  color: white;
+  font-family: courier;
+  font-size: 160%;
+
+  text-indent: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+input {
+    text-align : justify
+    width: 100%;
+    padding: 7px 15px;
+    margin : 20px;
+    border: none;
+  border-radius: 7px;
+
+}
+
+input[type=submit] {
+    width : 5%;
+    height: 40px;
+   background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left : 100px
+}
+
+select {
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+}
+</style>
+
+
 </head>
-<body>
-<a href="{% url 'web-homepage' %}">Homepage</a>
+<body style="background-color:dodgerblue;
+    text-align: justify ;
+    background-image : url('{% static "pictures/sMart.jpg" %}');
+    background-repeat: no-repeat;
+     background-size: 30% 40%;
+    background-attachment: fixed;
+    background-position : 75% 40% ;
+    ">
+
+
+
+<a href="{% url 'web-homepage' %}"><img align="right" src="{% static "pictures/sMart.jpg" %}"  style="width: 5%;" href="{% url 'web-homepage' %}"/></a>
+
+
 {% block content %}
 
 {% endblock %}
