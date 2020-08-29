@@ -80,8 +80,12 @@ def login_view(request):
     if form.is_valid():
         user_obj = form.cleaned_data.get('user_obj')
         login(request, user_obj)
+        if user_obj.is_student :
+            return HttpResponseRedirect('/profile-student/')
+        else :
+            return HttpResponseRedirect('/profile-mentor/')
 
-        return HttpResponseRedirect('/profile-student/')
+
     return render(request, "backend_usermanagement/login.html", {"form" : form})
 
 
@@ -92,6 +96,15 @@ def logout_view(request):
 
 def profile_student_dashboard(request):
     if (request.user.is_authenticated and request.user.is_student):
+        content = {'user' : request.user}
+        return render(request, 'web/student_dashboard.html', content)
+    else:
+
+        return HttpResponseRedirect('/login/')
+
+
+def profile_mentor_dashboard(request):
+    if (request.user.is_authenticated and request.user.is_teacher):
         content = {'user' : request.user}
         return render(request, 'web/student_dashboard.html', content)
     else:
