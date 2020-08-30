@@ -24,7 +24,7 @@ def marketplace(request):
 def student_sign_up(request):
     return render(request, "web/student_sign_up.html", {
         'title': 'Student Sign Up',
-        'name': 'student_sign_up'
+        'name': 'student_sign_ups'
     })
 
 

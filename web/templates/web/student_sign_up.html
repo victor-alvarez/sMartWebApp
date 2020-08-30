@@ -29,22 +29,22 @@
 		<select class="frame" id="n151_162">
 			<!-- Year -->
 			<option value="" selected disabled hidden>Year</option>
-			<option value="1st Year">1st Year</option>
-			<option value="2nd Year">2nd Year</option>
-			<option value="3rd Year">3rd Year</option>
-			<option value="4th Year">4th Year</option>
-			<option value="5th Year">5th Year</option>
-			<option value="Graduate">Graduate</option>
+			<option value="1st Year" style="color: black;">1st Year</option>
+			<option value="2nd Year" style="color: black;">2nd Year</option>
+			<option value="3rd Year" style="color: black;">3rd Year</option>
+			<option value="4th Year" style="color: black;">4th Year</option>
+			<option value="5th Year" style="color: black;">5th Year</option>
+			<option value="Graduate" style="color: black;">Graduate</option>
 		</select>
 		<!-- Frame 41 -->
-		<div class="frame" id="n151_184">
+		<a class="frame" href="" id="n151_184">
 			<!-- Submit -->
 			<div class="left top text" id="n151_150">Submit</div>
-		</div>
+		</a>
 		<!-- Rectangle 1 -->
 		<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/e9ca/f7f8/33a830474900a6af0ee250c58336e5fa" width="1440" height="82" class="left top vector" id="n162_143">
 		<!-- Log In -->
-		<div class="left top text" id="n162_147">Log In</div>
+		<a href=""><div class="left top text" id="n162_147">Log In</div></a>
 		<!-- Sign Up -->
 		<div class="left top text dropdown" id="n162_146">
 			<a class="dropdown-toggle" href="" data-toggle="dropdown" style="width: 94px; color: rgb(255, 255, 255); text-decoration: none;">
@@ -80,6 +80,7 @@
 	</div>
 
 	<script>
+		// toggle the checkbox for the terms and conditions button:
 		function checkBox() {
 			var checkMark = document.getElementById("n216_149");
 			var lst = checkMark.classList;
@@ -92,6 +93,7 @@
 			}
 		}
 
+		// selects the entire text input when default field is clicked:
 		function inputField(id) {
 			var field = document.getElementById(id);
 			if (field.value == field.attributes["value"].value) {
@@ -99,6 +101,7 @@
 			}
 		}
 
+		// if the field is left empty, reset it to default text and color:
 		function inputFieldBlur() {
 			if (!this.value) {
 				this.value = this.attributes["value"].value;
@@ -106,14 +109,28 @@
 			}
 		}
 
+		// when the user begins to input their info, the color becomes black:
 		function userInput() {
 			this.setAttribute("style", "color: black;");
 		}
 
+		// when the user begins to input their password, classify it:
+		function userPasswordInput() {
+			this.setAttribute("type", "password");
+		}
+
+		// for each input field, add event listeners to them:
 		lst = document.getElementsByClassName("inputField");
 		for (var i = 0; i < lst.length; i++) {
 			lst[i].addEventListener("blur", inputFieldBlur);
 			lst[i].addEventListener("input", userInput);
 		}
+
+		// for the password input field, add its listener(s):
+		lst.n151_159.addEventListener("input", userPasswordInput);
+
+		// for the year input field, add its listener(s):
+		yearField = document.getElementById("n151_162");
+		yearField.addEventListener("change", userInput);
 	</script>
 {% endblock %}
