@@ -9,40 +9,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 {% endblock %}
 {% block body-content %}
-    <!-- Student Sign Up (1) -->
-<div class="frame" id="n151_138">
-	<!-- Password -->
-	<div class="frame" id="n151_159">
-		<!-- Password -->
-		<div class="left top text" id="n151_148">Password</div>
-	</div>
-	<!-- Create Your Profile -->
-	<div class="left top text" id="n151_139">Create Your Profile</div>
-	<!-- Rectangle 47 -->
-	<div class="left top rectangle" id="n151_141"></div>
-	<!-- @mail.utoronto.ca -->
-	<div class="left top text" id="n151_151">@mail.utoronto.ca</div>
-	<!-- Username -->
-	<div class="frame" id="n151_157">
+	<!-- Student Sign Up (1) -->
+	<div class="frame" id="n151_138">
+		<!-- Create Your Profile -->
+		<div class="left top text" id="n151_139">Create Your Profile</div>
+		<!-- Rectangle 47 -->
+		<div class="left top rectangle" id="n151_141"></div>
+		<!-- @mail.utoronto.ca -->
+		<div class="left top text" id="n151_151">@mail.utoronto.ca</div>
 		<!-- Username -->
-		<div class="left top text" id="n151_147">Username</div>
-	</div>
-	<!-- Frame 39 -->
-	<div class="frame" id="n151_158">
-		<!-- Email -->
-		<div class="left top text" id="n151_146">Email</div>
-	</div>
-	<!-- Program -->
-	<div class="frame" id="n151_161">
+		<input class="frame inputField" id="n151_157" value="Username" onClick="inputField('n151_157')">
+		<!-- Frame 39 -->
+		<input class="frame inputField" id="n151_158" value="Email" onClick="inputField('n151_158')">
+		<!-- Password -->
+		<input class="frame inputField" id="n151_159" value="Password" onClick="inputField('n151_159')">
 		<!-- Program -->
-		<div class="left top text" id="n151_149">Program</div>
-	</div>
-	<!-- Frame 40 -->
-	<div class="frame" id="n151_162">
-		<!-- Year -->
-		<div class="left top text" id="n151_153">Year</div>
-		<!-- Polygon 2 -->
-		<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/0180/2a98/ff9671259f70e360ee4f15679a351a03" width="7" height="6" class="left top regular_polygon" id="n151_154"></div>
+		<input class="frame inputField" id="n151_161" value="Program" onClick="inputField('n151_161')">
+		<!-- Frame 40 -->
+		<select class="frame" id="n151_162">
+			<!-- Year -->
+			<option value="" selected disabled hidden>Year</option>
+			<option value="1st Year">1st Year</option>
+			<option value="2nd Year">2nd Year</option>
+			<option value="3rd Year">3rd Year</option>
+			<option value="4th Year">4th Year</option>
+			<option value="5th Year">5th Year</option>
+			<option value="Graduate">Graduate</option>
+		</select>
 		<!-- Frame 41 -->
 		<div class="frame" id="n151_184">
 			<!-- Submit -->
@@ -50,34 +43,77 @@
 		</div>
 		<!-- Rectangle 1 -->
 		<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/e9ca/f7f8/33a830474900a6af0ee250c58336e5fa" width="1440" height="82" class="left top vector" id="n162_143">
-			<!-- Log In -->
-			<div class="left top text" id="n162_147">Log In</div>
-			<!-- Sign Up -->
-			<div class="left top text dropdown" id="n162_146">
-                <a class="dropdown-toggle" href="" data-toggle="dropdown" style="width: 94px; color: rgb(255, 255, 255); text-decoration: none;">
-                    Sign Up<span class="caret" style="left: 76px;top: 12px;"></span>
-                </a>
-                <ul class="dropdown-menu" style="height: 79px;left: -13.5px;top: 120%;background: rgb(0, 153, 255);min-width: 90px;">
-                    <li><a href="{% url 'web-student-sign-up' %}" style="width: 88px; color: rgb(255, 255, 255)">Student</a></li>
-                    <li class="divider" style="width: 100%;top: 30px;height: 0.5px;"></li>
-                    <li style="top: 45px;"><a href="#" style="width: 88px; color: rgb(255, 255, 255)">Mentor</a></li>
-                </ul>
-            </div>
-			<!-- Find Mentors -->
-			<a href="{% url 'web-marketplace' %}"><div class="left top text" id="n162_145">Find Mentors </div></a>
-			<!-- SmartMentor2 (1) 2 -->
-			<a href="{% url 'web-homepage' %}"><div class="left top rectangle" id="n162_144"></div></a>
-			<!-- Frame 66 -->
-			<div class="frame" id="n216_147">
-				<!-- icon/navigation/check_24px -->
-				<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/8d5f/8abd/412fcbaac3ba6d3e0fb3e30626c4eb48" width="15" height="10" class="scale vector" id="n216_149"></div>
-				<!-- I agree to the Terms & Conditions -->
-				<div class="subsets left top text" id="n216_148">
-					<span id="n216_148-1" style="left: -8px;">I agree to the</span>
-					<span id="n216_148-0"></span>
-					<span id="n216_148-2" style="left: 137px;">Terms &amp; Conditions</span>
-				</div>
-				<!-- SmartMentor2 (1) 4 -->
-				<div class="left top rectangle" id="n385_0"></div>
-			</div>
+		<!-- Log In -->
+		<div class="left top text" id="n162_147">Log In</div>
+		<!-- Sign Up -->
+		<div class="left top text dropdown" id="n162_146">
+			<a class="dropdown-toggle" href="" data-toggle="dropdown" style="width: 94px; color: rgb(255, 255, 255); text-decoration: none;">
+				Sign Up<span class="caret" style="left: 76px;top: 12px;"></span>
+			</a>
+			<ul class="dropdown-menu" style="height: 79px;left: -13.5px;top: 120%;background: rgb(0, 153, 255);min-width: 90px;">
+				<li><a href="{% url 'web-student-sign-up' %}" style="width: 88px; color: rgb(255, 255, 255)">Student</a></li>
+				<li class="divider" style="width: 100%;top: 30px;height: 0.5px;"></li>
+				<li style="top: 45px;"><a href="#" style="width: 88px; color: rgb(255, 255, 255)">Mentor</a></li>
+			</ul>
+		</div>
+		<!-- Find Mentors -->
+		<a href="{% url 'web-marketplace' %}">
+			<div class="left top text" id="n162_145">Find Mentors </div>
+		</a>
+		<!-- SmartMentor2 (1) 2 -->
+		<a href="{% url 'web-homepage' %}">
+			<div class="left top rectangle" id="n162_144"></div>
+		</a>
+		<!-- Frame 66 -->
+		<button class="frame" id="n216_147" onClick="checkBox()">
+			<!-- icon/navigation/check_24px -->
+			<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/8d5f/8abd/412fcbaac3ba6d3e0fb3e30626c4eb48" width="15" height="10" class="scale vector checkMark-toggle" id="n216_149">
+		</button>
+		<!-- I agree to the Terms & Conditions -->
+		<div class="subsets left top text" id="n216_148">
+			<span id="n216_148-1" style="left: -8px;">I agree to the</span>
+			<span id="n216_148-0"></span>
+			<span id="n216_148-2" style="left: 137px;">Terms &amp; Conditions</span>
+		</div>
+		<!-- SmartMentor2 (1) 4 -->
+		<div class="left top rectangle" id="n385_0"></div>
+	</div>
+
+	<script>
+		function checkBox() {
+			var checkMark = document.getElementById("n216_149");
+			var lst = checkMark.classList;
+
+			if (lst.contains("checkMark-toggle")) {
+				lst.remove("checkMark-toggle");
+			}
+			else {
+				lst.add("checkMark-toggle");
+			}
+		}
+
+		function inputField(id) {
+			var field = document.getElementById(id);
+			if (field.value == field.attributes["value"].value) {
+				field.setSelectionRange(0, field.value.length);
+			}
+		}
+
+		function inputFieldBlur() {
+			if (!this.value) {
+				this.value = this.attributes["value"].value;
+				this.setAttribute("style", "");
+			}
+		}
+
+		function userInput() {
+			this.setAttribute("style", "color: black;");
+		}
+
+		lst = document.getElementsByClassName("inputField");
+		for (var i = 0; i < lst.length; i++) {
+			lst[i].addEventListener("blur", inputFieldBlur);
+			lst[i].addEventListener("input", userInput);
+		}
+	</script>
 {% endblock %}

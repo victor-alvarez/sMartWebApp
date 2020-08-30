@@ -10,21 +10,21 @@ from django.contrib.auth import login, logout
 def homepage(request):
     return render(request, "web/homepage.html", {
         'title': 'Homepage',
-        'name': 'homepages'
+        'name': 'homepage'
     })
 
 
 def marketplace(request):
     return render(request, "web/marketplace.html", {
         'title': 'Marketplace',
-        'name': 'marketplaces'
+        'name': 'marketplace'
     })
 
 
 def student_sign_up(request):
     return render(request, "web/student_sign_up.html", {
         'title': 'Student Sign Up',
-        'name': 'student_sign_ups'
+        'name': 'student_sign_up'
     })
 
 

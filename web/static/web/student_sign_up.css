@@ -17,9 +17,12 @@ body {
 		width: 540px;
 		height: 60px;
 		overflow: hidden;
-		background: rgb(255, 255, 255);
 		left: 837px;
 		top: 474px;
+		font-family: Roboto;
+        font-size: 24px;
+        color: rgb(168, 168, 168);
+        padding: 0 11.5px;
 	}
 
 		/* Password */
@@ -90,9 +93,12 @@ body {
 		width: 540px;
 		height: 60px;
 		overflow: hidden;
-		background: rgb(255, 255, 255);
 		left: 837px;
 		top: 282px;
+		font-family: Roboto;
+        font-size: 24px;
+        color: rgb(168, 168, 168);
+        padding: 0 11.5px;
 	}
 
 		/* Username */
@@ -118,9 +124,12 @@ body {
 		width: 319px;
 		height: 60px;
 		overflow: hidden;
-		background: rgb(255, 255, 255);
 		left: 837px;
 		top: 378px;
+		font-family: Roboto;
+        font-size: 24px;
+        color: rgb(168, 168, 168);
+        padding: 0 11.5px;
 	}
 
 		/* Email */
@@ -146,9 +155,12 @@ body {
 		width: 319px;
 		height: 60px;
 		overflow: hidden;
-		background: rgb(255, 255, 255);
 		left: 837px;
 		top: 563px;
+		font-family: Roboto;
+        font-size: 24px;
+        color: rgb(168, 168, 168);
+        padding: 0 11.5px;
 	}
 
 		/* Program */
@@ -171,12 +183,24 @@ body {
 
 	/* Frame 40 */
 	#n151_162 {
-		width: 127px;
+		width: 140px;
 		height: 60px;
 		overflow: hidden;
 		background: rgb(255, 255, 255);
-		left: 1250px;
+		left: 1236px;
 		top: 561px;
+		position: absolute;
+		    font-family: Roboto;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			color: rgb(168, 168, 168);
+			vertical-align: middle;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			line-height: 28.125px;
+			padding-left: 11.5px;
 	}
 
 		/* Year */
@@ -276,6 +300,10 @@ body {
 		position: absolute;
 	}
 
+	#n162_146 li a:hover {
+        background: rgb(0, 133, 255);
+    }
+
 	/* Find Mentors */
 	#n162_145 {
 		font-family: Roboto;
@@ -311,17 +339,20 @@ body {
 		width: 20px;
 		height: 20px;
 		overflow: hidden;
-		background: rgb(255, 255, 255);
 		left: 905px;
 		top: 672px;
 	}
 
 		/* icon/navigation/check_24px */
 		#n216_149 {
-			left: 10%;
+			left: 3%;
 			right: 15%;
 			top: 25%;
 			bottom: 25%;
+		}
+
+		.checkMark-toggle {
+		    display: none;
 		}
 
 	/* I agree to the Terms & Conditions */
