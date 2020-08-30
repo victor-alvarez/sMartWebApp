@@ -106,6 +106,9 @@
 			if (!this.value) {
 				this.value = this.attributes["value"].value;
 				this.setAttribute("style", "");
+				if (this.attributes["type"].value == "password") {
+					this.setAttribute("type", "");
+				}
 			}
 		}
 
