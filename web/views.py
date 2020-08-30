@@ -3,7 +3,10 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from backend_usermanagement.forms import UserCreationForm, UserLoginForm, StudentRegistrationForm, MentorRegistrationForm
 from django.contrib.auth import login, logout
+from django.contrib.auth import get_user_model
+from backend_usermanagement.models import Student
 
+User = get_user_model()
 # Create your views here.
 
 
@@ -110,3 +113,33 @@ def profile_mentor_dashboard(request):
     else:
 
         return HttpResponseRedirect('/login/')
+
+def register_student_ajax(request):
+    print(request.method)
+    if request.method == 'POST':
+        username = request.POST['username']
+        email = request.POST['email']
+        password = request.POST['password']
+        program = request.POST['program']
+        year = request.POST['year']
+        print(year)
+        try:
+            user = User(username = username,
+                email = email,
+                password = password)
+            user.set_password(password)
+            user.is_student = True
+            user.save()
+        except:
+            raise ValueError("Username / email already exists or some other error")
+
+        student = Student.objects.create(user = user)
+        student.username = username
+        student.email = email
+        student.program = program
+        student.year = year
+        student.save()
+
+
+        print(username)
+        return HttpResponseRedirect('/')

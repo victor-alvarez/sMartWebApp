@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 {% endblock %}
 {% block body-content %}
 	<!-- Student Sign Up (1) -->
@@ -17,6 +19,7 @@
 		<div class="left top rectangle" id="n151_141"></div>
 		<!-- @mail.utoronto.ca -->
 		<div class="left top text" id="n151_151">@mail.utoronto.ca</div>
+		<form id="student-signup" > {% csrf_token %}
 		<!-- Username -->
 		<input class="frame inputField" id="n151_157" value="Username" onClick="inputField('n151_157')">
 		<!-- Frame 39 -->
@@ -25,6 +28,7 @@
 		<input class="frame inputField" id="n151_159" value="Password" onClick="inputField('n151_159')">
 		<!-- Program -->
 		<input class="frame inputField" id="n151_161" value="Program" onClick="inputField('n151_161')">
+
 		<!-- Frame 40 -->
 		<select class="frame" id="n151_162">
 			<!-- Year -->
@@ -37,10 +41,11 @@
 			<option value="Graduate" style="color: black;">Graduate</option>
 		</select>
 		<!-- Frame 41 -->
-		<a class="frame" href="" id="n151_184">
+		<!--<a class="frame" href="" id="n151_184">-->
 			<!-- Submit -->
-			<div class="left top text" id="n151_150">Submit</div>
-		</a>
+			<input type="submit" id="n151_184" style="color: white; text-align: centre">Submit</input>
+		<!--</a>-->
+			</form>
 		<!-- Rectangle 1 -->
 		<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/e9ca/f7f8/33a830474900a6af0ee250c58336e5fa" width="1440" height="82" class="left top vector" id="n162_143">
 		<!-- Log In -->
@@ -136,4 +141,32 @@
 		yearField = document.getElementById("n151_162");
 		yearField.addEventListener("change", userInput);
 	</script>
+
+<script type="text/javascript">
+	$(document).on('submit', '#student-signup', function(e){
+		e.preventDefault();
+
+		$.ajax({
+			type: 'POST',
+			url : '/register_student_ajax/',
+			data : {
+
+				csrfmiddlewaretoken : '{{ csrf_token }}',
+
+				username : $('#n151_157').val(),
+				email : $('#n151_158').val(),
+				password: $('#n151_159').val(),
+				program: $('#n151_161').val(),
+				year: $('#n151_162').val(),
+			},
+			success : function(){
+				window.location.href = "/";
+
+			}
+
+		});
+
+	});
+
+</script>
 {% endblock %}

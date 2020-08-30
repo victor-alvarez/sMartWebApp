@@ -8,6 +8,7 @@ urlpatterns = [
     path('mentor-profile/', views.mentor_profile, name="web-mentor-profile"),
     path('profile-student/', views.profile_student_dashboard, name="student-dashboard"),
     path('profile-mentor/', views.profile_mentor_dashboard, name="mentor-dashboard"),
+    path('register_student_ajax/', views.register_student_ajax, name="register_student_ajax"),
 
     path('logout/', views.logout_view, name="logout"),
 ]

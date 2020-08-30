@@ -78,33 +78,27 @@ class Student(models.Model):
                            message='Username must be alphanumeric',
                            code='invalid username')
         ],
-        default='username'
+        default='username', null=True, blank=True
     )
 
     email = models.EmailField(
         max_length=255,
         unique=False    ,
         verbose_name='email address',
-        default='email@email.com'
+        default='email@email.com', null=True, blank=True
 
     )
 
-    program = models.CharField(max_length=255, unique=False, verbose_name='program', default="program")
+    program = models.CharField(max_length=255, unique=False, verbose_name='program', default="program", null=True, blank=True)
 
-    year = models.CharField(max_length=255,choices= [
-        ("Freshman", 'Freshman'),
-        ("Sophomore", 'Sophomore'),
-        ('Junior', 'Junior'),
-        ("Senior", 'Senior'),
-        ("Graduate", 'Graduate'),
-    ], default="year"
+    year = models.CharField(max_length=255 , default="year", null=True, blank=True
     )
 
     def __str__(self):
         return self.username
 
 class Mentor(models.Model):
-    user = models.OneToOneField(MyUser, on_delete=models.CASCADE)
+    user = models.OneToOneField(MyUser, on_delete=models.CASCADE, null=True, blank=True)
     username = models.CharField(
         max_length=255,
         unique=False,
