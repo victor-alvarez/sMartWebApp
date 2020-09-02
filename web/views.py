@@ -144,8 +144,8 @@ def register_student_ajax(request):
         print(username)
         return HttpResponseRedirect('/')
 
-class googleApi(request):
-    def __init__(self,user_id):
+# class googleApi(request):
+#     def __init__(self,user_id):
 
 
 

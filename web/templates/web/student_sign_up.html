@@ -2,13 +2,11 @@
 {% load static %}
 
 {% block head-content %}
-    <link rel="stylesheet" type="text/css" href="https://ui-kit.co/figma2html/dist/layout.css?v=2">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
+	<link rel="stylesheet" type="text/css" href="https://ui-kit.co/figma2html/dist/layout.css?v=2">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 {% endblock %}
 {% block body-content %}
 	<!-- Student Sign Up (1) -->
@@ -19,41 +17,43 @@
 		<div class="left top rectangle" id="n151_141"></div>
 		<!-- @mail.utoronto.ca -->
 		<div class="left top text" id="n151_151">@mail.utoronto.ca</div>
-		<form id="student-signup" > {% csrf_token %}
-		<!-- Username -->
-		<input class="frame inputField" id="n151_157" value="Username" onClick="inputField('n151_157')">
-		<!-- Frame 39 -->
-		<input class="frame inputField" id="n151_158" value="Email" onClick="inputField('n151_158')">
-		<!-- Password -->
-		<input class="frame inputField" id="n151_159" value="Password" onClick="inputField('n151_159')">
-		<!-- Program -->
-		<input class="frame inputField" id="n151_161" value="Program" onClick="inputField('n151_161')">
-
-		<!-- Frame 40 -->
-		<select class="frame" id="n151_162">
-			<!-- Year -->
-			<option value="" selected disabled hidden>Year</option>
-			<option value="1st Year" style="color: black;">1st Year</option>
-			<option value="2nd Year" style="color: black;">2nd Year</option>
-			<option value="3rd Year" style="color: black;">3rd Year</option>
-			<option value="4th Year" style="color: black;">4th Year</option>
-			<option value="5th Year" style="color: black;">5th Year</option>
-			<option value="Graduate" style="color: black;">Graduate</option>
-		</select>
-		<!-- Frame 41 -->
-		<!--<a class="frame" href="" id="n151_184">-->
+		<form id="student-signup">
+			{% csrf_token %}
+			<!-- Username -->
+			<input class="frame inputField" id="n151_157" value="Username" onClick="inputField('n151_157')">
+			<!-- Frame 39 -->
+			<input class="frame inputField" id="n151_158" value="Email" onClick="inputField('n151_158')">
+			<!-- Password -->
+			<input class="frame inputField" id="n151_159" value="Password" onClick="inputField('n151_159')">
+			<!-- Program -->
+			<input class="frame inputField" id="n151_161" value="Program" onClick="inputField('n151_161')">
+			<!-- Frame 40 -->
+			<select class="frame" id="n151_162">
+				<!-- Year -->
+				<option value="" selected disabled hidden>Year</option>
+				<option value="1st Year" style="color: black;">1st Year</option>
+				<option value="2nd Year" style="color: black;">2nd Year</option>
+				<option value="3rd Year" style="color: black;">3rd Year</option>
+				<option value="4th Year" style="color: black;">4th Year</option>
+				<option value="5th Year" style="color: black;">5th Year</option>
+				<option value="Graduate" style="color: black;">Graduate</option>
+			</select>
+			<!-- Frame 41 -->
+			<!--<a class="frame" href="" id="n151_184">-->
 			<!-- Submit -->
 			<input type="submit" id="n151_184" style="color: white; text-align: centre">Submit</input>
-		<!--</a>-->
-			</form>
+			<!--</a>-->
+		</form>
 		<!-- Rectangle 1 -->
 		<img src="https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/e9ca/f7f8/33a830474900a6af0ee250c58336e5fa" width="1440" height="82" class="left top vector" id="n162_143">
 		<!-- Log In -->
-		<a href=""><div class="left top text" id="n162_147">Log In</div></a>
+		<a href="">
+			<div class="left top text" id="n162_147">Log In</div>
+		</a>
 		<!-- Sign Up -->
 		<div class="left top text dropdown" id="n162_146">
 			<a class="dropdown-toggle" href="" data-toggle="dropdown" style="width: 94px; color: rgb(255, 255, 255); text-decoration: none;">
-				Sign Up<span class="caret" style="left: 76px;top: 12px;"></span>
+			Sign Up<span class="caret" style="left: 76px;top: 12px;"></span>
 			</a>
 			<ul class="dropdown-menu" style="height: 79px;left: -13.5px;top: 120%;background: rgb(0, 153, 255);min-width: 90px;">
 				<li><a href="{% url 'web-student-sign-up' %}" style="width: 88px; color: rgb(255, 255, 255)">Student</a></li>
@@ -83,7 +83,6 @@
 		<!-- SmartMentor2 (1) 4 -->
 		<div class="left top rectangle" id="n385_0"></div>
 	</div>
-
 	<script>
 		// toggle the checkbox for the terms and conditions button:
 		function checkBox() {
@@ -141,33 +140,32 @@
 		yearField = document.getElementById("n151_162");
 		yearField.addEventListener("change", userInput);
 	</script>
+	<script type="text/javascript">
+		$(document).on('submit', '#student-signup', function(e){
+			e.preventDefault();
 
-<script type="text/javascript">
-	$(document).on('submit', '#student-signup', function(e){
-		e.preventDefault();
+			$.ajax({
+				type: 'POST',
+				url : '/register_student_ajax/',
+				data : {
 
-		$.ajax({
-			type: 'POST',
-			url : '/register_student_ajax/',
-			data : {
+					csrfmiddlewaretoken : '{{ csrf_token }}',
 
-				csrfmiddlewaretoken : '{{ csrf_token }}',
+					username : $('#n151_157').val(),
+					email : $('#n151_158').val(),
+					password: $('#n151_159').val(),
+					program: $('#n151_161').val(),
+					year: $('#n151_162').val(),
+				},
+				success : function(){
+					alert("You have successfully registered !");
+					window.location.href = "/";
 
-				username : $('#n151_157').val(),
-				email : $('#n151_158').val(),
-				password: $('#n151_159').val(),
-				program: $('#n151_161').val(),
-				year: $('#n151_162').val(),
-			},
-			success : function(){
-				alert("You have successfully registered !");
-				window.location.href = "/";
+				}
 
-			}
+			});
 
 		});
 
-	});
-
-</script>
+	</script>
 {% endblock %}
