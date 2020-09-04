@@ -124,10 +124,10 @@ def register_student_ajax(request):
         year = request.POST['year']
         print(year)
         try:
-            user = User(username = username,
+            user = User.objects.create_user(username = username,
                 email = email,
                 password = password)
-            user.set_password(password)
+            # user.set_password(password)
             user.is_student = True
             user.save()
         except:
