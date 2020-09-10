@@ -13,7 +13,7 @@ User = get_user_model()
 def homepage(request):
     return render(request, "web/homepage.html", {
         'title': 'Homepage',
-        'name': 'homepage'
+        'name': 'homepages'
     })
 
 
