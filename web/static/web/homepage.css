@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* style resets for rendered figma elements/components */
+
+/*LINKS*/
+a {
+    text-decoration: initial;
+}
+
+.component, .frame {
+	position: absolute;
+}
+
+.component *,
+.frame * {
+	position: absolute;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.group {
+   display: contents;
+}
+
+/* CONSTRAINTS */
+.right {
+	right: 0;
+	left: auto;
+}
+
+.left {
+	left: 0;
+	right: auto;
+}
+
+.left_right {
+	left: 0;
+	right: 0;
+}
+
+.top {
+	top: 0;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.top_bottom {
+	top: 0;
+	bottom: 0;
+}
+
+.scale {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.h-scale {
+	left: 0;
+	right: 0;
+	align-self: stretch;
+	flex-direction: column;
+}
+
+.v-scale {
+	align-self: stretch;
+	top: 0;
+	bottom: 0;
+	flex-direction: row;
+}
+
+.button {
+	cursor: pointer;
+}
+
+/* TEXT */
+.text.subsets {
+	display: block;
+}
+
+.text span {
+	position: relative;
+	display: inline;
+}
